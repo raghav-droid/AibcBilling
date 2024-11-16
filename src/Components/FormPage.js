@@ -95,7 +95,7 @@ function FormPage({ policy }) {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "Entries.xlsx";
+    a.download = `${policy}_Entries.xlsx`;
     a.click();
     window.URL.revokeObjectURL(url);
   };
